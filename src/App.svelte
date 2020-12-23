@@ -1,10 +1,19 @@
 <script> 
-
-const user = 'World'
+  const user = 'World'
+  let count = 0
 </script>
 
-<p>Hello {user}</p>
+<main>
+  <p>Hello {user}</p>
+  <button on:click={() => count++}>Clicked {count}</button>
+</main>
 
-<style>
+<style lang="scss">
+
+  main {
+    p {
+      color: red;
+    }
+  }
 
 </style>
