@@ -1,7 +1,7 @@
 {
   "inputs": {
-    "src/global.css": {
-      "bytes": 141,
+    "global.css": {
+      "bytes": 152,
       "imports": []
     },
     "__snowpack__/env.js": {
@@ -84,13 +84,10 @@
       ]
     },
     "src/index.js": {
-      "bytes": 481,
+      "bytes": 459,
       "imports": [
         {
           "path": "__snowpack__/env.js"
-        },
-        {
-          "path": "src/global.css"
         },
         {
           "path": "src/App.js"
@@ -99,26 +96,23 @@
     }
   },
   "outputs": {
-    "../node_modules/.cache/snowpack/~~bundle~~/src/global.css": {
+    "../node_modules/.cache/snowpack/~~bundle~~/global.css": {
       "imports": [],
-      "inputs": {},
-      "bytes": 0
+      "inputs": {
+        "global.css": {
+          "bytesInOutput": 113
+        }
+      },
+      "bytes": 114
     },
     "../node_modules/.cache/snowpack/~~bundle~~/src/index.js": {
-      "imports": [
-        {
-          "path": "../node_modules/.cache/snowpack/~~bundle~~/src/chunk.3I42H3S6.js"
-        }
-      ],
+      "imports": [],
       "exports": [
         "default"
       ],
       "inputs": {
         "__snowpack__/env.js": {
           "bytesInOutput": 56
-        },
-        "src/global.css": {
-          "bytesInOutput": 0
         },
         "src/App.css": {
           "bytesInOutput": 0
@@ -151,13 +145,7 @@
           "bytesInOutput": 134
         }
       },
-      "bytes": 8371
-    },
-    "../node_modules/.cache/snowpack/~~bundle~~/chunk.3I42H3S6.js": {
-      "imports": [],
-      "exports": [],
-      "inputs": {},
-      "bytes": 0
+      "bytes": 8343
     },
     "../node_modules/.cache/snowpack/~~bundle~~/src/index.css": {
       "imports": [],
@@ -170,15 +158,6 @@
         }
       },
       "bytes": 155
-    },
-    "../node_modules/.cache/snowpack/~~bundle~~/chunk.GLHBTPRI.css": {
-      "imports": [],
-      "inputs": {
-        "src/global.css": {
-          "bytesInOutput": 113
-        }
-      },
-      "bytes": 114
     }
   }
 }
