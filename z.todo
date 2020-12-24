@@ -1,0 +1,5 @@
+Todo:
+  ✔ make a durived store from api or deeper object structure maybe a json file. @done(20-12-24 07:11)
+  ☐ see if mdxs will work with SPA or if it needs a router like sapper
+  ☐ figure out how to build better for deploy
+  ☐ add deploy script or learn gh action
