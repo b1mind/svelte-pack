@@ -1,6 +1,12 @@
-$clr-bg: #0b0b0b;
 $max: 1200px;
 
+:root {
+  --clr: skyblue;
+  --clr-white: #fff;
+  --clr-bg: #0b0b0b;
+}
+
 body {
-  background-color: $clr-bg;
+  color: var(--clr-white);
+  background-color: var(--clr-bg);
 }
