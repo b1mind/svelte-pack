@@ -1,12 +1,30 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 
+const rollupPlugin = [
+  'snowpack-plugin-rollup-bundle',
+  {
+    emitHtmlFiles: true,
+    // equivalent to inputOptions.input from Rollup
+    extendConfig: (config) => {
+      // https://rollupjs.org/guide/en/#outputoptions-object
+      config.outputOptions = {
+        input: './src/index.js',
+      }
+      // https://rollupjs.org/guide/en/#inputoptions-object
+      config.inputOptions = { format }
+
+      return config
+    },
+  },
+]
+
 module.exports = {
   mount: {
-    public: { url: '/', static: true },
-    src: { url: '/src' },
+    public: '/',
+    src: '/src',
   },
 
-  plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-sass'],
+  plugins: [rollupPlugin, '@snowpack/plugin-svelte', '@snowpack/plugin-sass'],
 
   install: [
     /* ... */
@@ -21,6 +39,7 @@ module.exports = {
   },
 
   buildOptions: {
+    baseUrl: './',
     /* ... */
   },
 
