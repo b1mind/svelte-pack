@@ -1,1 +1,1 @@
-:root{--clr:skyblue;--clr-white:#fff;--clr-bg:#0b0b0b}body{color:var(--clr-white);background-color:var(--clr-bg)}
+:root{--clr:blue;--clr-two:lightgrey;--clr-two-dark:grey;--clr-white:#fff;--clr-bg:#0b0b0b}*,*::after,*::before{box-sizing:border-box}body{color:var(--clr-white);background-color:var(--clr-bg)}

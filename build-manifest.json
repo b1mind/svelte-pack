@@ -1,7 +1,7 @@
 {
   "inputs": {
     "global.css": {
-      "bytes": 152,
+      "bytes": 259,
       "imports": []
     },
     "__snowpack__/env.js": {
@@ -9,18 +9,18 @@
       "imports": []
     },
     "src/App.css": {
-      "bytes": 87,
+      "bytes": 216,
       "imports": []
     },
-    "web_modules/common/index-2a5d4bc6.js": {
-      "bytes": 9214,
+    "web_modules/common/index-11290df0.js": {
+      "bytes": 9377,
       "imports": []
     },
     "web_modules/svelte/internal.js": {
-      "bytes": 419,
+      "bytes": 442,
       "imports": [
         {
-          "path": "web_modules/common/index-2a5d4bc6.js"
+          "path": "web_modules/common/index-11290df0.js"
         }
       ]
     },
@@ -28,20 +28,12 @@
       "bytes": 2090,
       "imports": [
         {
-          "path": "web_modules/common/index-2a5d4bc6.js"
-        }
-      ]
-    },
-    "src/data/questionStore.js": {
-      "bytes": 725,
-      "imports": [
-        {
-          "path": "web_modules/svelte/store.js"
+          "path": "web_modules/common/index-11290df0.js"
         }
       ]
     },
     "src/data/redditStore.js": {
-      "bytes": 1171,
+      "bytes": 1211,
       "imports": [
         {
           "path": "web_modules/svelte/store.js"
@@ -49,31 +41,43 @@
       ]
     },
     "src/components/Card.css": {
-      "bytes": 67,
+      "bytes": 593,
       "imports": []
     },
+    "web_modules/gsap.js": {
+      "bytes": 192610,
+      "imports": []
+    },
+    "src/anime.js": {
+      "bytes": 273,
+      "imports": [
+        {
+          "path": "web_modules/gsap.js"
+        }
+      ]
+    },
     "src/components/Card.js": {
-      "bytes": 2013,
+      "bytes": 2675,
       "imports": [
         {
           "path": "src/components/Card.css"
         },
         {
           "path": "web_modules/svelte/internal.js"
+        },
+        {
+          "path": "src/anime.js"
         }
       ]
     },
     "src/App.js": {
-      "bytes": 9034,
+      "bytes": 5169,
       "imports": [
         {
           "path": "src/App.css"
         },
         {
           "path": "web_modules/svelte/internal.js"
-        },
-        {
-          "path": "src/data/questionStore.js"
         },
         {
           "path": "src/data/redditStore.js"
@@ -100,10 +104,10 @@
       "imports": [],
       "inputs": {
         "global.css": {
-          "bytesInOutput": 113
+          "bytesInOutput": 193
         }
       },
-      "bytes": 114
+      "bytes": 194
     },
     "../node_modules/.cache/snowpack/~~bundle~~/src/index.js": {
       "imports": [],
@@ -117,47 +121,50 @@
         "src/App.css": {
           "bytesInOutput": 0
         },
-        "web_modules/common/index-2a5d4bc6.js": {
-          "bytesInOutput": 3194
+        "web_modules/common/index-11290df0.js": {
+          "bytesInOutput": 3317
         },
         "web_modules/svelte/internal.js": {
           "bytesInOutput": 0
         },
         "web_modules/svelte/store.js": {
-          "bytesInOutput": 473
-        },
-        "src/data/questionStore.js": {
-          "bytesInOutput": 314
+          "bytesInOutput": 484
         },
         "src/data/redditStore.js": {
-          "bytesInOutput": 575
+          "bytesInOutput": 603
         },
         "src/components/Card.css": {
           "bytesInOutput": 0
         },
+        "web_modules/gsap.js": {
+          "bytesInOutput": 58428
+        },
+        "src/anime.js": {
+          "bytesInOutput": 117
+        },
         "src/components/Card.js": {
-          "bytesInOutput": 688
+          "bytesInOutput": 933
         },
         "src/App.js": {
-          "bytesInOutput": 2884
+          "bytesInOutput": 1690
         },
         "src/index.js": {
-          "bytesInOutput": 134
+          "bytesInOutput": 139
         }
       },
-      "bytes": 8343
+      "bytes": 66387
     },
     "../node_modules/.cache/snowpack/~~bundle~~/src/index.css": {
       "imports": [],
       "inputs": {
         "src/App.css": {
-          "bytesInOutput": 87
+          "bytesInOutput": 214
         },
         "src/components/Card.css": {
-          "bytesInOutput": 67
+          "bytesInOutput": 589
         }
       },
-      "bytes": 155
+      "bytes": 804
     }
   }
 }
