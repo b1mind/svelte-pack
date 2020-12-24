@@ -2,9 +2,8 @@
 
 module.exports = {
   mount: {
-    /* ... */
-    public: '/',
-    src: '/dist',
+    public: { url: '/', static: true },
+    src: { url: '/src' },
   },
 
   plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-sass'],
@@ -18,7 +17,7 @@ module.exports = {
   },
 
   devOptions: {
-    /* ... */
+    port: 9001,
   },
 
   buildOptions: {
