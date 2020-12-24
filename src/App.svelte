@@ -1,5 +1,4 @@
 <script>
-  import { questions } from './data/questionStore'
   import { redditPostData } from './data/redditStore'
   import Card from './components/Card.svelte'
 
@@ -7,7 +6,7 @@
   let count = 0
 </script>
 
-<main>
+<header>
   <h1>This is Svelte-Pack!</h1>
   <p>Hello {user}</p>
 
@@ -16,27 +15,32 @@
     {count}
     {count === 1 ? 'time' : 'times'}
   </button>
+</header>
 
+<main>
   {#each $redditPostData as post}
-    <Card url={post.img} title={post.title} date={post.created} />
-  {/each}
-
-  {#each $questions as q}
-    <h3>{q.question}</h3>
-
-    <p>
-      {#each q.answers as a}{a.text} = {a.votes} <br />{/each}
-    </p>
+    <Card thumb={post.thumb} title={post.title} date={post.created} />
   {/each}
 </main>
 
 <style lang="scss">
+  //< style more
+
   $max: 1200px;
+
+  header {
+    max-width: $max;
+    margin: 1rem auto;
+  }
 
   main {
     max-width: $max;
     margin: 10px auto;
+    padding: 1rem;
     display: grid;
     place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
+  //< end me
 </style>
