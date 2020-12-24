@@ -4,6 +4,10 @@
       "bytes": 141,
       "imports": []
     },
+    "src/index.css": {
+      "bytes": 155,
+      "imports": []
+    },
     "__snowpack__/env.js": {
       "bytes": 73,
       "imports": []
@@ -103,6 +107,15 @@
       "imports": [],
       "inputs": {},
       "bytes": 0
+    },
+    "../node_modules/.cache/snowpack/~~bundle~~/src/index.css": {
+      "imports": [],
+      "inputs": {
+        "src/index.css": {
+          "bytesInOutput": 154
+        }
+      },
+      "bytes": 155
     },
     "../node_modules/.cache/snowpack/~~bundle~~/src/index.js": {
       "imports": [
