@@ -1,5 +1,9 @@
 Todo:
-  ✔ make a durived store from api or deeper object structure maybe a json file. @done(20-12-24 07:11)
   ☐ see if mdxs will work with SPA or if it needs a router like sapper
-  ☐ figure out how to build better for deploy
-  ☐ add deploy script or learn gh action
+  ☐ add postCSS and plugins for it
+  ☐ try to get rollup/svelte preproccessor working
+
+Archive:
+  ✔ make a durived store from api or deeper object structure maybe a json file. @done(20-12-24 07:11) @project(Todo)
+  ✔ figure out how to build better for deploy @done(20-12-24 12:24) @project(Todo)
+  ✔ add deploy script or learn gh action @done(20-12-24 12:24) @project(Todo)
