@@ -5,11 +5,13 @@ const rollupPlugin = [
   {
     emitHtmlFiles: false,
     // equivalent to inputOptions.input from Rollup
+    entrypoints: './src/index.js',
+
     extendConfig: (config) => {
       // https://rollupjs.org/guide/en/#outputoptions-object
       config.outputOptions = {
         file: './build/dist/index.js',
-        format: 'es',
+        format: 'cjs',
         plugins: [
           // need preprocessor ?
         ],
@@ -30,7 +32,11 @@ module.exports = {
     src: '/src',
   },
 
-  plugins: [rollupPlugin, '@snowpack/plugin-svelte', '@snowpack/plugin-sass'],
+  plugins: [
+    // rollupPlugin,
+    '@snowpack/plugin-svelte',
+    '@snowpack/plugin-sass',
+  ],
 
   install: [
     /* ... */
@@ -55,5 +61,12 @@ module.exports = {
 
   alias: {
     /* ... */
+  },
+  experiments: {
+    optimize: {
+      bundle: true,
+      minify: true,
+      target: 'es2018',
+    },
   },
 }
