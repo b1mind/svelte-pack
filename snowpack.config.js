@@ -3,15 +3,21 @@
 const rollupPlugin = [
   'snowpack-plugin-rollup-bundle',
   {
-    emitHtmlFiles: true,
+    emitHtmlFiles: false,
     // equivalent to inputOptions.input from Rollup
     extendConfig: (config) => {
       // https://rollupjs.org/guide/en/#outputoptions-object
       config.outputOptions = {
-        input: './src/index.js',
+        file: './build/dist/index.js',
+        format: 'es',
+        plugins: [
+          // need preprocessor ?
+        ],
       }
       // https://rollupjs.org/guide/en/#inputoptions-object
-      config.inputOptions = { format }
+      config.inputOptions = {
+        input: './src/index.js',
+      }
 
       return config
     },
