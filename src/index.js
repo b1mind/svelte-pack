@@ -1,11 +1,8 @@
-/* Add JavaScript code here! */
-console.log('Hello World! You did! Welcome to Snowpack :D')
-
 import './global.scss'
 import App from './App.svelte'
 
-let app = new App({
-  target: document.body,
+const app = new App({
+  target: document.querySelector('#app'),
 })
 
 export default app
