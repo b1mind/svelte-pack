@@ -1,0 +1,184 @@
+{
+  "inputs": {
+    "src/global.css": {
+      "bytes": 141,
+      "imports": []
+    },
+    "__snowpack__/env.js": {
+      "bytes": 73,
+      "imports": []
+    },
+    "src/App.css": {
+      "bytes": 87,
+      "imports": []
+    },
+    "web_modules/common/index-2a5d4bc6.js": {
+      "bytes": 9214,
+      "imports": []
+    },
+    "web_modules/svelte/internal.js": {
+      "bytes": 419,
+      "imports": [
+        {
+          "path": "web_modules/common/index-2a5d4bc6.js"
+        }
+      ]
+    },
+    "web_modules/svelte/store.js": {
+      "bytes": 2090,
+      "imports": [
+        {
+          "path": "web_modules/common/index-2a5d4bc6.js"
+        }
+      ]
+    },
+    "src/data/questionStore.js": {
+      "bytes": 725,
+      "imports": [
+        {
+          "path": "web_modules/svelte/store.js"
+        }
+      ]
+    },
+    "src/data/redditStore.js": {
+      "bytes": 1171,
+      "imports": [
+        {
+          "path": "web_modules/svelte/store.js"
+        }
+      ]
+    },
+    "src/components/Card.css": {
+      "bytes": 67,
+      "imports": []
+    },
+    "src/components/Card.js": {
+      "bytes": 2013,
+      "imports": [
+        {
+          "path": "src/components/Card.css"
+        },
+        {
+          "path": "web_modules/svelte/internal.js"
+        }
+      ]
+    },
+    "src/App.js": {
+      "bytes": 9034,
+      "imports": [
+        {
+          "path": "src/App.css"
+        },
+        {
+          "path": "web_modules/svelte/internal.js"
+        },
+        {
+          "path": "src/data/questionStore.js"
+        },
+        {
+          "path": "src/data/redditStore.js"
+        },
+        {
+          "path": "src/components/Card.js"
+        }
+      ]
+    },
+    "src/index.js": {
+      "bytes": 481,
+      "imports": [
+        {
+          "path": "__snowpack__/env.js"
+        },
+        {
+          "path": "src/global.css"
+        },
+        {
+          "path": "src/App.js"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../node_modules/.cache/snowpack/~~bundle~~/src/global.css": {
+      "imports": [],
+      "inputs": {},
+      "bytes": 0
+    },
+    "../node_modules/.cache/snowpack/~~bundle~~/src/index.js": {
+      "imports": [
+        {
+          "path": "../node_modules/.cache/snowpack/~~bundle~~/src/chunk.3I42H3S6.js"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "inputs": {
+        "__snowpack__/env.js": {
+          "bytesInOutput": 56
+        },
+        "src/global.css": {
+          "bytesInOutput": 0
+        },
+        "src/App.css": {
+          "bytesInOutput": 0
+        },
+        "web_modules/common/index-2a5d4bc6.js": {
+          "bytesInOutput": 3194
+        },
+        "web_modules/svelte/internal.js": {
+          "bytesInOutput": 0
+        },
+        "web_modules/svelte/store.js": {
+          "bytesInOutput": 473
+        },
+        "src/data/questionStore.js": {
+          "bytesInOutput": 314
+        },
+        "src/data/redditStore.js": {
+          "bytesInOutput": 575
+        },
+        "src/components/Card.css": {
+          "bytesInOutput": 0
+        },
+        "src/components/Card.js": {
+          "bytesInOutput": 688
+        },
+        "src/App.js": {
+          "bytesInOutput": 2884
+        },
+        "src/index.js": {
+          "bytesInOutput": 134
+        }
+      },
+      "bytes": 8370
+    },
+    "../node_modules/.cache/snowpack/~~bundle~~/chunk.3I42H3S6.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 0
+    },
+    "../node_modules/.cache/snowpack/~~bundle~~/src/index.css": {
+      "imports": [],
+      "inputs": {
+        "src/App.css": {
+          "bytesInOutput": 87
+        },
+        "src/components/Card.css": {
+          "bytesInOutput": 67
+        }
+      },
+      "bytes": 155
+    },
+    "../node_modules/.cache/snowpack/~~bundle~~/chunk.GLHBTPRI.css": {
+      "imports": [],
+      "inputs": {
+        "src/global.css": {
+          "bytesInOutput": 113
+        }
+      },
+      "bytes": 114
+    }
+  }
+}
