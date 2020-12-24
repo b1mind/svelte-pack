@@ -3,7 +3,9 @@
 const rollupPlugin = [
   'snowpack-plugin-rollup-bundle',
   {
+    //fixme rollup working with preprocessor
     emitHtmlFiles: false,
+
     // equivalent to inputOptions.input from Rollup
     entrypoints: './src/index.js',
 
@@ -16,6 +18,7 @@ const rollupPlugin = [
           // need preprocessor ?
         ],
       }
+
       // https://rollupjs.org/guide/en/#inputoptions-object
       config.inputOptions = {
         input: './src/index.js',
@@ -27,6 +30,17 @@ const rollupPlugin = [
 ]
 
 module.exports = {
+  //start config obj
+
+  //currently the only way I can get build to make a min/clean dist.
+  experiments: {
+    optimize: {
+      bundle: true,
+      minify: true,
+      target: 'es2018',
+    },
+  },
+
   mount: {
     public: '/',
     src: '/src',
@@ -38,20 +52,19 @@ module.exports = {
     '@snowpack/plugin-sass',
   ],
 
-  install: [
-    /* ... */
-  ],
-
-  installOptions: {
-    /* ... */
-  },
-
   devOptions: {
     port: 9001,
   },
 
   buildOptions: {
     baseUrl: './',
+  },
+
+  install: [
+    /* ... */
+  ],
+
+  installOptions: {
     /* ... */
   },
 
@@ -61,12 +74,5 @@ module.exports = {
 
   alias: {
     /* ... */
-  },
-  experiments: {
-    optimize: {
-      bundle: true,
-      minify: true,
-      target: 'es2018',
-    },
   },
 }
