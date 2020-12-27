@@ -1,7 +1,7 @@
 {
   "inputs": {
     "global.css": {
-      "bytes": 321,
+      "bytes": 349,
       "imports": []
     },
     "__snowpack__/env.js": {
@@ -41,7 +41,7 @@
       ]
     },
     "src/components/Card.css": {
-      "bytes": 1183,
+      "bytes": 1277,
       "imports": []
     },
     "web_modules/gsap.js": {
@@ -49,7 +49,7 @@
       "imports": []
     },
     "src/anime.js": {
-      "bytes": 273,
+      "bytes": 544,
       "imports": [
         {
           "path": "web_modules/gsap.js"
@@ -57,7 +57,7 @@
       ]
     },
     "src/components/Card.js": {
-      "bytes": 4545,
+      "bytes": 4391,
       "imports": [
         {
           "path": "src/components/Card.css"
@@ -107,10 +107,10 @@
       "imports": [],
       "inputs": {
         "global.css": {
-          "bytesInOutput": 235
+          "bytesInOutput": 258
         }
       },
-      "bytes": 236
+      "bytes": 259
     },
     "../node_modules/.cache/snowpack/~~bundle~~/src/index.js": {
       "imports": [],
@@ -143,10 +143,10 @@
           "bytesInOutput": 58428
         },
         "src/anime.js": {
-          "bytesInOutput": 117
+          "bytesInOutput": 255
         },
         "src/components/Card.js": {
-          "bytesInOutput": 1787
+          "bytesInOutput": 1714
         },
         "src/App.js": {
           "bytesInOutput": 1776
@@ -155,7 +155,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 67338
+      "bytes": 67403
     },
     "../node_modules/.cache/snowpack/~~bundle~~/src/index.css": {
       "imports": [],
@@ -164,10 +164,10 @@
           "bytesInOutput": 249
         },
         "src/components/Card.css": {
-          "bytesInOutput": 1171
+          "bytesInOutput": 1263
         }
       },
-      "bytes": 1421
+      "bytes": 1513
     }
   }
 }
