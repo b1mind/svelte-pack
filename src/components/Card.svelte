@@ -10,13 +10,25 @@
   let isToggled
   const tl = gsap.timeline({})
 
+  function killTimeline(timeline) {
+    const targets = timeline.getChildren()
+
+    timeline.kill()
+
+    for (let i = 0; i < targets.length; i++) {
+      if (targets[i].targets().length) {
+        gsap.set(targets[i].targets(), { clearProps: 'all' })
+      }
+    }
+  }
+
   function cardAnimate(e) {
     const height = e.target.height
     const thumbnail = e.target.closest('.thumbnail')
     const caption = thumbnail.nextElementSibling
 
     if (isToggled) {
-      tl.reverse()
+      killTimeline(tl)
       isToggled = false
       return
     }
