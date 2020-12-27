@@ -1,9 +1,10 @@
 :root {
-  --clr: blue;
-  --clr-two: lightgrey;
-  --clr-two-dark: grey;
+  --clr: #748fee;
+  --clr-two: #282c34;
+  --clr-two-dark: #3a3838;
   --clr-white: #fff;
-  --clr-bg: #0b0b0b;
+  --clr-grey: #c0c0c0;
+  --clr-bg: #1b1b1b;
 }
 
 *,
