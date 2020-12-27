@@ -1,6 +1,6 @@
 <script>
   import { gsap } from 'gsap'
-  import { animate } from '../anime.js'
+  import { animate, killTimeline } from '../anime.js'
 
   export let thumb
   export let title
@@ -10,22 +10,12 @@
   let isToggled
   const tl = gsap.timeline({})
 
-  function killTimeline(timeline) {
-    const targets = timeline.getChildren()
-
-    timeline.kill()
-
-    for (let i = 0; i < targets.length; i++) {
-      if (targets[i].targets().length) {
-        gsap.set(targets[i].targets(), { clearProps: 'all' })
-      }
-    }
-  }
-
   function cardAnimate(e) {
     const height = e.target.height
     const thumbnail = e.target.closest('.thumbnail')
     const caption = thumbnail.nextElementSibling
+
+    if (tl.isActive()) return
 
     if (isToggled) {
       killTimeline(tl)
@@ -38,7 +28,7 @@
     tl.add('start')
       .set('.overlay', { display: 'block' })
       .set(thumbnail.parentElement, { zIndex: 999 })
-      .to(caption.children, { duration: 0.5, x: -400 }, 'start')
+      .to(caption.children, { duration: 0.75, x: -360, autoAlpha: 0 }, 'start')
       .to(
         thumbnail,
         {
@@ -46,9 +36,9 @@
           position: 'absolute',
           duration: 1,
           height: height,
-          zIndex: 999,
+          zIndex: 420,
         },
-        '-=0.5 ',
+        'start',
       )
   }
 </script>
@@ -75,7 +65,7 @@
     height: 100%;
     display: none;
     background: rgba(0, 0, 0, 0.2);
-    opacity: 0.5;
+    opacity: 0.25;
     z-index: 600;
   }
 
@@ -116,14 +106,14 @@
       content: attr(data-ups) '';
       position: absolute;
       right: 0;
-      bottom: 20px;
+      bottom: 0;
       width: 3.5rem;
       height: 3.5rem;
       display: grid;
       place-items: center;
       background-color: var(--clr-two);
       border-radius: 50%;
-      z-index: 999;
+      z-index: 421;
     }
 
     i {
@@ -137,7 +127,7 @@
 
     h2 {
       margin: 0;
-      padding: 0.5rem;
+      padding: 0.5rem 2rem 0.5rem 0.5rem;
       font-size: 1rem;
       background-color: var(--clr-two-dark);
     }
