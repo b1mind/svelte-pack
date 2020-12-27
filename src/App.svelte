@@ -19,7 +19,12 @@
 
 <main>
   {#each $redditPostData as post}
-    <Card thumb={post.thumb} title={post.title} date={post.created} />
+    <Card
+      thumb={post.img}
+      ups={post.upVotes}
+      author={post.author}
+      title={post.title}
+      date={post.created} />
   {/each}
 </main>
 
@@ -31,15 +36,18 @@
   header {
     max-width: $max;
     margin: 1rem auto;
+    padding: 0.5rem 1rem;
   }
 
   main {
+    position: relative;
     max-width: $max;
     margin: 10px auto;
-    padding: 1rem;
+    // padding: 1rem;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 360px));
+    gap: 3rem;
     place-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   //< end me
