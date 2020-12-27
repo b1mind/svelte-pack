@@ -57,7 +57,7 @@
       ]
     },
     "src/components/Card.js": {
-      "bytes": 4584,
+      "bytes": 4573,
       "imports": [
         {
           "path": "src/components/Card.css"
@@ -146,7 +146,7 @@
           "bytesInOutput": 255
         },
         "src/components/Card.js": {
-          "bytesInOutput": 1767
+          "bytesInOutput": 1780
         },
         "src/App.js": {
           "bytesInOutput": 1776
@@ -155,7 +155,7 @@
           "bytesInOutput": 139
         }
       },
-      "bytes": 67456
+      "bytes": 67469
     },
     "../node_modules/.cache/snowpack/~~bundle~~/src/index.css": {
       "imports": [],
