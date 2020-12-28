@@ -4,11 +4,20 @@
 
   const user = 'World'
   let count = 0
+
+  /* function overlay(e) {
+    const card = e.target.closest('.thumbnail')
+    if (!card) return
+    const overlay = document.querySelector('.overlay')
+    console.dir(overlay)
+    overlay.style.height = `${document.body.clientHeight}px`
+    overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block'
+  } */
 </script>
 
 <header>
   <h1>This is Svelte-Pack!</h1>
-  <p>Hello {user}</p>
+  <p>Y0 {user}</p>
 
   <button on:click={() => count++}>
     Clicked
@@ -40,10 +49,8 @@
   }
 
   main {
-    position: relative;
     max-width: $max;
     margin: 10px auto;
-    // padding: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 360px));
     gap: 3rem;
