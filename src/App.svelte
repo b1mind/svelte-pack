@@ -1,18 +1,6 @@
 <script>
-  import { redditPostData } from './data/redditStore'
-  import Card from './components/Card.svelte'
-
   const user = 'World'
   let count = 0
-
-  /* function overlay(e) {
-    const card = e.target.closest('.thumbnail')
-    if (!card) return
-    const overlay = document.querySelector('.overlay')
-    console.dir(overlay)
-    overlay.style.height = `${document.body.clientHeight}px`
-    overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block'
-  } */
 </script>
 
 <header>
@@ -26,16 +14,7 @@
   </button>
 </header>
 
-<main>
-  {#each $redditPostData as post}
-    <Card
-      thumb={post.img}
-      ups={post.upVotes}
-      author={post.author}
-      title={post.title}
-      date={post.created} />
-  {/each}
-</main>
+<main />
 
 <style lang="scss">
   //< style more
