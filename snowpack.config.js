@@ -24,6 +24,13 @@ module.exports = {
     open: 'none',
   },
 
+  // packageOptions: {
+  //   polyfillNode: true,
+  //   rollup: {
+  //     plugins: [require('rollup-plugin-node-polyfills')({ crypto: true })],
+  //   },
+  // },
+
   buildOptions: {
     baseUrl: './',
   },

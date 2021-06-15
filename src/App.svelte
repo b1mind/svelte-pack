@@ -1,4 +1,7 @@
 <script>
+  import { getDefaultSession } from '@inrupt/solid-client-authn-browser'
+  console.log(getDefaultSession)
+
   const user = 'World'
   let count = 0
 </script>
